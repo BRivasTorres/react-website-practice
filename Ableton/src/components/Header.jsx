@@ -19,7 +19,7 @@ const Header = () => {
 					</NavLink>
 					<NavLink
 						to={"/trylive"}
-						className="ml-[auto] text-[#0000FF] "
+						className="ml-[auto] text-[#0000FF]"
 					>
 						Try live for free
 					</NavLink>
