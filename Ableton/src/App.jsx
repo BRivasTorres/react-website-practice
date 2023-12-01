@@ -19,7 +19,7 @@ function App() {
 			<BrowserRouter>
 				<Ableton />
 				<Routes>
-					<Route path="/en/*" element={<En />}>
+					<Route exact path="/en" element={<En />}>
 						<Route path="about" element={<AboutEn />} />
 						<Route path="jobs" element={<JobsEn />} />
 						<Route
@@ -27,14 +27,14 @@ function App() {
 							element={<ApprenticeshipsEn />}
 						/>
 					</Route>
-					<Route path="/live" element={<Live />} />
-					<Route path="/push" element={<Push />} />
-					<Route path="/note" element={<Note />} />
-					<Route path="/link" element={<Link />} />
-					<Route path="/help" element={<Help />} />
-					<Route path="/more" element={<More />} />
-					<Route path="/login" element={<Login />} />
-					<Route path="/TryLive" element={<TryLive />} />
+					<Route exact path="/live" element={<Live />} />
+					<Route exact path="/push" element={<Push />} />
+					<Route exact path="/note" element={<Note />} />
+					<Route exact path="/link" element={<Link />} />
+					<Route exact path="/help" element={<Help />} />
+					<Route exact path="/more" element={<More />} />
+					<Route exact path="/login" element={<Login />} />
+					<Route exact path="/TryLive" element={<TryLive />} />
 				</Routes>
 			</BrowserRouter>
 		</div>
