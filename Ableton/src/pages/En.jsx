@@ -2,8 +2,8 @@ import { NavLink, Outlet } from "react-router-dom";
 
 const En = () => {
 	return (
-		<div className="w-[90%] max-w-[1600px] mx-auto bg-white flex flex-col px-[2rem] py-[1rem] ">
-			<ul className="flex gap-[2rem] text-[1.3rem] ">
+		<div className="w-[90%] max-w-[1600px] mx-auto bg-white flex flex-col">
+			<ul className="flex gap-[2rem] text-[1.3rem] px-[2.5rem] py-[2rem]">
 				<NavLink
 					to={"about"}
 					title="about"
