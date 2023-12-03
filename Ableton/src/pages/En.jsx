@@ -2,16 +2,36 @@ import { NavLink, Outlet } from "react-router-dom";
 
 const En = () => {
 	return (
-		<div>
-			<NavLink to={"about"} title="about">
-				About
-			</NavLink>
-			<NavLink to={"jobs"} title="jobs">
-				Jobs
-			</NavLink>
-			<NavLink to={"apprenticeships"} title="apprenticeships">
-				Apprenticeships
-			</NavLink>
+		<div className="w-[90%] max-w-[1600px] mx-auto bg-white flex flex-col px-[2rem] py-[1rem] ">
+			<ul className="flex gap-[2rem] text-[1.3rem] ">
+				<NavLink
+					to={"about"}
+					title="about"
+					className={({ isActive }) =>
+						isActive ? "text-activeLink" : null
+					}
+				>
+					About
+				</NavLink>
+				<NavLink
+					to={"jobs"}
+					title="jobs"
+					className={({ isActive }) =>
+						isActive ? "text-activeLink" : null
+					}
+				>
+					Jobs
+				</NavLink>
+				<NavLink
+					to={"apprenticeships"}
+					title="apprenticeships"
+					className={({ isActive }) =>
+						isActive ? "text-activeLink" : null
+					}
+				>
+					Apprenticeships
+				</NavLink>
+			</ul>
 			<Outlet />
 		</div>
 	);

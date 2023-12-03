@@ -5,7 +5,7 @@ const Header = () => {
 	return (
 		<header>
 			<nav className="text-[1.5rem] font-700 p-[1rem] ">
-				<ul className="flex px-[2rem] gap-[2rem] items-center ">
+				<ul className="flex px-[2rem] gap-[2rem] items-center">
 					<NavLink to={"/en"} title="en">
 						<img src={logo} alt="logo" title="logo" />
 					</NavLink>
@@ -27,7 +27,7 @@ const Header = () => {
 					<NavLink
 						to={"/more"}
 						title="more"
-						className="text-[#FF8B4D] "
+						className="text-activeLink "
 					>
 						More +
 					</NavLink>
