@@ -10,8 +10,8 @@ const AboutEn = () => {
 			/>
 			<article className="w-[50%] mx-auto mt-[6rem]">
 				<p className="text-[2rem] font-semibold">
-					We make
-					<NavLink className="text-[#0000FF]">Live</NavLink>,{" "}
+					We make 
+					<NavLink className="text-[#0000FF]"> Live</NavLink>,{" "}
 					<NavLink className="text-[#0000FF]">Push</NavLink> and
 					<NavLink className="text-[#0000FF]"> Link</NavLink> — unique
 					software and hardware for music creation and performance.
@@ -25,15 +25,19 @@ const AboutEn = () => {
 					across the world.
 				</p>
 			</article>
-			<div className="mt-[6rem] ">
+
+			<div className="bg-[#FBFFA7] w-[50%] h-[85dvh] z-[1] absolute  "></div>
+			<div className="mt-[6rem] grid grid-cols-[50%_10%_40%]">
 				<img
 					src="/imgs/img2.png"
 					alt="img2"
-					className="w-[50%] h-[80dvh] "
+					className="h-[70dvh] z-[2]"
 				/>
-				<div className="bg-[#FBFFA7] w-[60%] h-[100dvh] ml-auto ">
-					<img src="/imgs/img3.png" alt="img3" className="w-[80%] " />
-				</div>
+				<img
+					src="/imgs/img3.png"
+					alt="img3"
+					className="col-start-3 self-center z-[2]"
+				/>
 			</div>
 		</div>
 	);
