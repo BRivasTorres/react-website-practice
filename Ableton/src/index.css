@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.l-about {
+    left: calc(100dvw - 66%);
+}

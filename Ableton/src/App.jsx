@@ -15,7 +15,7 @@ import ApprenticeshipsEn from "./pages/ApprenticeshipsEn";
 
 function App() {
 	return (
-		<div className="bg-[#F3F3F3] ">
+		<div className="bg-[#F3F3F3]">
 			<BrowserRouter>
 				<Ableton />
 				<Routes>
