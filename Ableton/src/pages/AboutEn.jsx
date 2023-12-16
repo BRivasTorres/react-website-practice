@@ -1,9 +1,8 @@
 import { NavLink } from "react-router-dom";
-import ReactPlayer from "react-player";
 
 const AboutEn = () => {
 	return (
-		<div className="w-[80%] max-w-[1400px] min-w-[300px] mx-auto border border-red-600 mt-[1rem] ">
+		<section className="w-[80%] max-w-[1400px] min-w-[300px] mx-auto border border-red-600 mt-[1rem]">
 			<img
 				src="/imgs/img1.png"
 				alt="img1"
@@ -27,22 +26,20 @@ const AboutEn = () => {
 				</p>
 			</article>
 
-			<div className="grid grid-cols-[50%_10%_40%] mt-[16rem]">
-				<div className="bg-[#FBFFA7] w-[60%] h-[95dvh] absolute mt-[-8rem] l-about "></div>
-				<img
-					src="/imgs/img2.png"
-					alt="img2"
-					className="h-[70dvh] w-[80vw] z-[0] "
-				/>
-				<img
-					src="/imgs/img3.png"
-					alt="img3"
-					className="col-start-3 self-center z-[0]"
-				/>
-			</div>
+			<aside className="relative">
+				<div className="bg-[#FBFFA7] mt-[8rem] w-[80%] h-[100dvh] relative right-[-32.6%]"></div>
+				<div className="grid grid-cols-[50%_10%_40%] absolute top-[50%] translate-y-[-50%]">
+					<img src="/imgs/img2.png" alt="img2" className="z-[0] " />
+					<img
+						src="/imgs/img3.png"
+						alt="img3"
+						className="z-[0] col-start-3 self-center"
+					/>
+				</div>
+			</aside>
 
-			<article className="w-[60%] mx-auto my-[16rem]">
-				<h3 className="font-semibold text-[1.5rem] my-[1.5rem] ">
+			<article className="w-[60%] mx-auto mt-[16rem]">
+				<h3 className="font-semibold text-[1.8rem] my-[1.5rem] ">
 					Making music isn’t easy. It takes time, effort, and
 					learning. But when you’re in the flow, it’s incredibly
 					rewarding.
@@ -58,11 +55,41 @@ const AboutEn = () => {
 						height="400"
 						src="https://www.youtube.com/embed/9SbnhgjeyXA?si=N0AHUcYO1FIpQysd"
 						title="YouTube video player"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
-					</iframe>
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					></iframe>
+					<span className="mx-[1rem] ">
+						Why Ableton - Juanpe Bolivar
+					</span>
+				</div>
+
+				<div className="my-[8rem]">
+					<h3 className="font-semibold text-[1.8rem]  ">
+						We are more than 350 people from 30 different countries
+						divided between our headquarters in Berlin and our
+						offices in Los Angeles and Tokyo.
+					</h3>
+					<p className="mt-[1rem] ">
+						Most of us are active musicians, producers, and DJs, and
+						many of us use Live and Push every day. We come from a
+						wide range of cultural and professional backgrounds.
+						Some of us have PhDs, some are self-taught, and most of
+						us are somewhere in between. What connects us is the
+						shared belief that each of us has the skills and
+						knowledge to contribute to something big: helping to
+						shape the future of music culture.
+					</p>
 				</div>
 			</article>
-		</div>
+
+			<aside className="relative">
+				<div className="bg-[#b6ffc0] w-[50%] h-[100dvh] relative left-[-12.6%] "></div>
+				<div className="">
+					<img src="/imgs/img4.png" alt="img3" className="z-[1] " />
+					<img src="/imgs/img5.png" alt="img4" className="z-[1]" />
+					<img src="/imgs/img6.png" alt="img4" className="z-[1]" />
+				</div>
+			</aside>
+		</section>
 	);
 };
 
