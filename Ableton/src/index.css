@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-.l-about {
-    left: calc(100dvw - 66%);
+.article-about {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 6rem;
 }

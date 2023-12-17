@@ -8,7 +8,7 @@ const AboutEn = () => {
 				alt="img1"
 				className="w-[100%] mx-auto "
 			/>
-			<article className="w-[60%] mx-auto mt-[6rem]">
+			<article className="article-about">
 				<p className="text-[2rem] font-semibold">
 					We make
 					<NavLink className="text-[#0000FF]"> Live</NavLink>,{" "}
@@ -38,7 +38,7 @@ const AboutEn = () => {
 				</div>
 			</aside>
 
-			<article className="w-[60%] mx-auto mt-[16rem]">
+			<article className="article-about">
 				<h3 className="font-semibold text-[1.8rem] my-[1.5rem] ">
 					Making music isn’t easy. It takes time, effort, and
 					learning. But when you’re in the flow, it’s incredibly
@@ -82,11 +82,81 @@ const AboutEn = () => {
 			</article>
 
 			<aside className="relative">
-				<div className="bg-[#b6ffc0] w-[50%] h-[100dvh] relative left-[-12.6%] "></div>
-				<div className="">
-					<img src="/imgs/img4.png" alt="img3" className="z-[1] " />
-					<img src="/imgs/img5.png" alt="img4" className="z-[1]" />
-					<img src="/imgs/img6.png" alt="img4" className="z-[1]" />
+				<div className="bg-[#b6ffc0] w-[75%] h-[120dvh] relative left-[-12.6%] "></div>
+				<div className="grid grid-cols-[45%_10%_45%] absolute top-[50%] translate-y-[-50%] w-[100%] ">
+					<div className=" flex flex-col justify-between">
+						<img
+							src="/imgs/img4.png"
+							alt="img3"
+							className="z-[1] h-[45%] "
+						/>
+						<img
+							src="/imgs/img5.png"
+							alt="img4"
+							className="z-[1] h-[45%]  "
+						/>
+					</div>
+					<div className="col-start-3 self-center">
+						<img
+							src="/imgs/img6.png"
+							alt="img4"
+							className="z-[1]"
+						/>
+					</div>
+				</div>
+			</aside>
+
+			<article className="article-about ">
+				<h2 className="text-[2rem] font-semibold ">
+					We believe it takes focus to create truly outstanding
+					instruments. We only work on a few products and we strive to
+					make them great.
+				</h2>
+				<p className="mt-[1rem] ">
+					Most of us are active musicians, producers, and DJs, and
+					many of us use Live and Push every day. We come from a wide
+					range of cultural and professional backgrounds. Some of us
+					have PhDs, some are self-taught, and most of us are
+					somewhere in between. What connects us is the shared belief
+					that each of us has the skills and knowledge to contribute
+					to something big: helping to shape the future of music
+					culture.
+				</p>
+			</article>
+
+			<aside className="mt-[8rem] ">
+				<img src="/imgs/img7.png" alt="" />
+			</aside>
+
+			<article className="article-about">
+				<h2 className="text-[2rem] font-semibold ">
+					We’re passionate about what we do, but we’re equally
+					passionate about improving who we are
+				</h2>
+				<p className="mt-[2rem] ">
+					We work hard to foster an environment where people can grow
+					both personally and professionally, and we strive to create
+					a wealth of opportunities to learn from and with each other.
+				</p>
+				<p className="mt-[1rem] ">
+					Alongside an internal training program, employees are
+					actively supported in acquiring new knowledge and skills,
+					and coached on applying these in their daily work. In
+					addition, staff-organized development and music salons are a
+					chance to discuss new technologies, production techniques
+					and best practices.
+				</p>
+			</article>
+
+			<aside className="relative mt-[8rem]">
+				<div className="bg-[#d5b3ff] h-[100dvh] w-[80%] mx-auto "></div>
+				<div className="absolute top-[50%] translate-y-[-50%] grid grid-cols-[45%_55%] items-center border border-green-950">
+					<img src="/imgs/img8.png" alt=""/>
+					<img
+						src="/imgs/img9.png"
+						alt=""
+						className="ml-[38%] "
+					/>
 				</div>
 			</aside>
 		</section>
