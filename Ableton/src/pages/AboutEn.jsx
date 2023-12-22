@@ -1,15 +1,17 @@
 import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 const AboutEn = () => {
 	return (
-		<section className="w-[80%] max-w-[1400px] min-w-[300px] mx-auto border border-red-600 mt-[1rem]">
+		<section className="w-[80%] max-w-[1400px] min-w-[300px] mx-auto mt-[1rem]">
 			<img
 				src="/imgs/img1.png"
 				alt="img1"
 				className="w-[100%] mx-auto "
 			/>
 			<article className="article-about">
-				<p className="text-[2rem] font-semibold">
+				<h2>
 					We make
 					<NavLink className="text-[#0000FF]"> Live</NavLink>,{" "}
 					<NavLink className="text-[#0000FF]">Push</NavLink> and
@@ -17,7 +19,7 @@ const AboutEn = () => {
 					software and hardware for music creation and performance.
 					With these products, our community of users creates amazing
 					things.
-				</p>
+				</h2>
 				<p className="text-[1.1rem] mt-[2rem]">
 					Ableton was founded in 1999 and released the first version
 					of Live in 2001. Our products are used by a community of
@@ -39,11 +41,11 @@ const AboutEn = () => {
 			</aside>
 
 			<article className="article-about">
-				<h3 className="font-semibold text-[1.8rem] my-[1.5rem] ">
+				<h2 className="my-[1.5rem] ">
 					Making music isn’t easy. It takes time, effort, and
 					learning. But when you’re in the flow, it’s incredibly
 					rewarding.
-				</h3>
+				</h2>
 				<p className="text-black text-[1.2rem] mb-[7rem]">
 					We feel the same way about making Ableton products. The
 					driving force behind Ableton is our passion for what we
@@ -107,7 +109,7 @@ const AboutEn = () => {
 			</aside>
 
 			<article className="article-about ">
-				<h2 className="text-[2rem] font-semibold ">
+				<h2>
 					We believe it takes focus to create truly outstanding
 					instruments. We only work on a few products and we strive to
 					make them great.
@@ -129,7 +131,7 @@ const AboutEn = () => {
 			</aside>
 
 			<article className="article-about">
-				<h2 className="text-[2rem] font-semibold ">
+				<h2>
 					We’re passionate about what we do, but we’re equally
 					passionate about improving who we are
 				</h2>
@@ -150,13 +152,48 @@ const AboutEn = () => {
 
 			<aside className="relative mt-[8rem]">
 				<div className="bg-[#d5b3ff] h-[100dvh] w-[80%] mx-auto "></div>
-				<div className="absolute top-[50%] translate-y-[-50%] grid grid-cols-[45%_55%] items-center border border-green-950">
-					<img src="/imgs/img8.png" alt=""/>
+				<div className="absolute top-[50%] translate-y-[-50%] grid grid-cols-[_40%_10%_50%] items-center w-[100%]">
+					<img src="/imgs/img8.png" alt="" />
 					<img
 						src="/imgs/img9.png"
 						alt=""
-						className="ml-[38%] "
+						className="col-start-3 "
 					/>
+				</div>
+			</aside>
+
+			<article className="article-about">
+				<h2>
+					We want our employees to love it here. Since we’re looking
+					for exceptional talent from around the world, we will do
+					everything we can to make your transition as easy as
+					possible.
+				</h2>
+				<p className="mt-[1rem]">
+					If you're joining us in Berlin, we'll help with relocation
+					and paperwork. We’ll even provide you with free German or
+					English lessons. Plus, working in Germany means you can
+					expect comprehensive health insurance for you and your
+					family, as well as generous maternity and paternity leave.
+					Office hours are flexible, but it’s not all work; we have
+					several company and team outings throughout the year as well
+					as a variety of fun, informal small-group activities.
+				</p>
+			</article>
+
+			<aside className="mt-[8rem]  grid grid-cols-[_50%_50%] ">
+				<img src="/imgs/img10.png" alt="" />
+				<div className="bg-[#b1c5ff] flex justify-center items-center">
+					<div className="w-[65%] mx-auto">
+						<h2 className="text-[1.8rem] font-semibold mb-[1.5rem] ">
+							We’re really proud of the work we’ve done so far. But
+							there’s so much more to come. If you’d like to be a part
+						</h2>
+						<NavLink className="text-[1.5rem] text-[#0000ff] font-semibold ">
+							See Latest Jobs{" "}
+							<FontAwesomeIcon icon={faChevronRight} />
+						</NavLink>
+					</div>
 				</div>
 			</aside>
 		</section>
