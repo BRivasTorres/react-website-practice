@@ -8,10 +8,10 @@ import Help from "./pages/Help";
 import More from "./pages/More";
 import Login from "./pages/Login";
 import TryLive from "./pages/TryLive";
-import En from "./pages/En";
-import AboutEn from "./pages/AboutEn";
-import JobsEn from "./pages/JobsEn";
-import ApprenticeshipsEn from "./pages/ApprenticeshipsEn";
+import En from "./pages/about/En";
+import AboutEn from "./pages/about/AboutEn";
+import JobsEn from "./pages/about/JobsEn";
+import ApprenticeshipsEn from "./pages/about/ApprenticeshipsEn";
 
 function App() {
 	return (
