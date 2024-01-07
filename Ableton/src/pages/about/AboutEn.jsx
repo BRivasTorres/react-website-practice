@@ -6,6 +6,7 @@ import Footer from "../../components/Footer";
 const AboutEn = () => {
 	return (
 		<>
+			<div className="bg-[#F3F3F3] h-[5px]"></div>
 			<section className="w-[80%] max-w-[1400px] min-w-[300px] mx-auto mt-[1rem]">
 				<img
 					src="/imgs/img1.png"
