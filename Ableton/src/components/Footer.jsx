@@ -2,15 +2,16 @@ import { NavLink } from "react-router-dom"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faFacebookF, faTwitter, faYoutube, faInstagram} from "@fortawesome/free-brands-svg-icons"
 import {faChevronRight} from "@fortawesome/free-solid-svg-icons";
-import { useState, useEffect } from "react";
-// import {getData} from "../services/apiService"
+import { useState } from "react";
+import Countries from "./Selects";
+import Selects from "./Selects";
 
 const Footer = () => {
-    const [input, setInput] = useState();
+	const [input, setInput] = useState()
   return (
-		<footer className="border border-gray-900 w-[80%] mx-auto ">
+		<footer className="w-[80%] mx-auto ">
 			<h2 className="text-[3.5rem] font-semibold mt-[6rem]">Ableton</h2>
-			<div className="grid grid-cols-[_25%_30%_45%] grid-rows-[_50%_50%_50%] gap-y-[2rem] content-between h-[100%] mt-[4rem] ">
+			<div className="grid grid-cols-[_25%_35%_45%] grid-rows-[_50%_50%_50%] gap-[2rem] content-between h-[100%] mt-[4rem] ">
 				<section className="flex flex-col text-[1.2rem]">
 					<NavLink to={"/live"} className="w-[fit-content]">
 						Register Live or Push
@@ -149,31 +150,25 @@ const Footer = () => {
 				</section>
 
 				<section className="">
-					<h4 className="footer__h4">Languaje and location</h4>
-					<select
-						name="languaje"
-						id="languaje"
-						className="bg-[#EEEEEE] color-black hover:cursor-pointer px-[15px] py-[6px]"
-					>
-						<option value="english">English</option>
-						<option value="spanish">spanish</option>
-						<option value="deutch">Deutch</option>
-						<option value="francais">Francais</option>
-					</select>
-					<select
-						name="country"
-						id="country"
-						className="bg-[#EEEEEE] color-black hover:cursor-pointer px-[15px] py-[6px] ml-[3px] "
-					>
-						{
-							// useEffect(() => {
-							// 	getData("https://restcountries.com/v3.1/all")
-							// 		.then((res) => console.log(res))
-							// 		.catch((error) => console.log(error));
-							// }, [])
-						}
-					</select>
+					<Selects />
 				</section>
+			</div>
+			<div className="my-[4rem] text-[14px] font-semibold ">
+				<ul className="flex gap-x-[1rem] items-center">
+					<NavLink to={"#"}>Contact Us</NavLink>
+					<NavLink to={"#"}>Press Resources</NavLink>
+					<NavLink to={"#"}>Legal Info</NavLink>
+					<NavLink to={"#"}>Privacy Policy</NavLink>
+					<NavLink to={"#"}>Cookie Settings</NavLink>
+					<NavLink to={"#"}>Imprint</NavLink>
+					
+					<NavLink to={"#"} className="ml-auto " >
+						Made in Berlin
+						<img src="/imgs/logo.png" className="w-[50px] inline-block" />
+					</NavLink>
+				</ul>
+				
+				<h3 className="mt-[4rem] text-center ">This site was created to practice, THIS IS NOT THE OFFICIAL SITE</h3>
 			</div>
 		</footer>
   );
