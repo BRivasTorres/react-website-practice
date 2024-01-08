@@ -5,6 +5,7 @@ export default {
 		extend: {
 			colors: {
 				activeLink: "#FF8B4D",
+				blueLink: "#0000FF",
 			},
 		},
 	},
