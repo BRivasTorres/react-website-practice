@@ -1,6 +1,7 @@
 import { NavLink, Outlet } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import enData from "../../mocks/enData";
 
 const En = () => {
 	return (
@@ -58,21 +59,49 @@ const En = () => {
 				</article>
 			</section>
 
-
-			<section className="mt-[4rem] w-[85%] mx-auto">
-				<div className="flex items-center justify-between ">
-					<h2 className="font-bold text-[2.4rem] ">The latest from Ableton</h2>
-					<ul className="text-blueLink font-semibold text-[1.2rem] flex gap-[1rem] ">
-						<NavLink to={"#"}>All Posts</NavLink>
-						<NavLink to={"#"}>Artist</NavLink>
-						<NavLink to={"#"}>News </NavLink>
-						<NavLink to={"#"}>Downloads</NavLink>
-						<NavLink to={"#"}>Tutorials</NavLink>
-						<NavLink to={"#"}>Videos</NavLink>
-						<NavLink to={"#"}>Loop</NavLink>
-					</ul>
-				</div>
+			<section className="w-[85%] mx-auto">
+				{enData.map(item => {
+					return (
+						<div key={item.id} className="mt-[6rem]">
+							<section className="flex items-baseline justify-between ">
+								<h2 className=" font-bold text-[2.4rem] capitalize">
+									{item.title}
+								</h2>
+								{item.links ? (
+									<ul className="text-blueLink font-semibold text-[1.2rem] flex gap-[1rem] capitalize">
+										{item.links.map((link, id) => {
+											return (
+												<NavLink key={id}>
+													{link}
+												</NavLink>
+											);
+										})}
+									</ul>
+								) : null}
+							</section>
+							<section className="grid grid-cols-[_1fr_1fr_1fr] gap-[4rem] mt-[2rem]">
+								{item.boxes.map((box, id) => {
+									return (
+										<div
+											key={id}
+											className="hover:cursor-pointer"
+										>
+											<img
+												src={box.img}
+												alt=""
+												className="w-[100%] "
+											/>
+											<h4 className="font-semibold text-[1.4rem] mt-[1rem] ">{box.description}</h4>
+										</div>
+									);
+								})}
+							</section>
+						</div>
+					);
+				})}	
 			</section>
+
+			<section></section>
 			{/* <ul className="flex gap-[2rem] text-[1.3rem] px-[2.5rem] py-[2rem]">
 				<NavLink
 					to={"about"}
@@ -90,6 +119,7 @@ const En = () => {
 						isActive ? "text-activeLink" : null
 					}
 				>
+				 
 					Jobs
 				</NavLink>
 				<NavLink
