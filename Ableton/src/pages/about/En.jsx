@@ -2,6 +2,7 @@ import { NavLink, Outlet } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import enData from "../../mocks/enData";
+import Footer from "../../components/Footer";
 
 const En = () => {
 	return (
@@ -60,7 +61,7 @@ const En = () => {
 			</section>
 
 			<section className="w-[85%] mx-auto">
-				{enData.map(item => {
+				{enData.map((item) => {
 					return (
 						<div key={item.id} className="mt-[6rem]">
 							<section className="flex items-baseline justify-between ">
@@ -91,47 +92,32 @@ const En = () => {
 												alt=""
 												className="w-[100%] "
 											/>
-											<h4 className="font-semibold text-[1.4rem] mt-[1rem] ">{box.description}</h4>
+											<h4 className="font-semibold text-[1.4rem] mt-[1rem] ">
+												{box.description}
+											</h4>
 										</div>
 									);
 								})}
 							</section>
 						</div>
 					);
-				})}	
+				})}
 			</section>
 
-			<section></section>
-			{/* <ul className="flex gap-[2rem] text-[1.3rem] px-[2.5rem] py-[2rem]">
-				<NavLink
-					to={"about"}
-					title="about"
-					className={({ isActive }) =>
-						isActive ? "text-activeLink" : null
-					}
-				>
-					About
-				</NavLink>
-				<NavLink
-					to={"jobs"}
-					title="jobs"
-					className={({ isActive }) =>
-						isActive ? "text-activeLink" : null
-					}
-				>
-				 
-					Jobs
-				</NavLink>
-				<NavLink
-					to={"apprenticeships"}
-					title="apprenticeships"
-					className={({ isActive }) =>
-						isActive ? "text-activeLink" : null
-					}
-				>
-					Apprenticeships
-				</NavLink>
-			</ul> */}
+			<section className="w-[100%] h-[200px]  mx-auto bg-[#EEEEEE] mt-[4rem] flex justify-center items-center text-[1.3rem] capitalize font-semibold ">
+				<h4 className="mr-[30px] ">More:</h4>
+				<ul className="flex gap-[1.2rem] text-blueLink ">
+					<NavLink to={"#"}>all posts</NavLink>
+					<NavLink to={"#"}>atists</NavLink>
+					<NavLink to={"#"}>news</NavLink>
+					<NavLink to={"#"}>downloads</NavLink>
+					<NavLink to={"#"}>tutorials</NavLink>
+					<NavLink to={"#"}>videos</NavLink>
+					<NavLink to={"#"}>loop</NavLink>
+					<NavLink to={"#"}>one thing</NavLink>
+				</ul>
+			</section>
+			<Footer />
 			<Outlet />
 		</div>
 	);

@@ -12,7 +12,7 @@ const Selects = () => {
     return (
 		<>
 			<h4 className="footer__h4">Languaje and location</h4>
-			<div className="flex gap-[3px] ">
+			<div className="flex gap-[3px] mt-[1rem] ">
 				<select
 					name="languaje"
 					id="languaje"

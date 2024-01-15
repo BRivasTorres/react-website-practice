@@ -9,9 +9,9 @@ import Selects from "./Selects";
 const Footer = () => {
 	const [input, setInput] = useState()
   return (
-		<footer className="w-[80%] mx-auto ">
+		<footer className="w-[80%] mx-auto">
 			<h2 className="text-[3.5rem] font-semibold mt-[6rem]">Ableton</h2>
-			<div className="grid grid-cols-[_25%_35%_45%] grid-rows-[_50%_50%_50%] gap-[2rem] content-between h-[100%] mt-[4rem] ">
+			<div className="grid grid-cols-[_1fr_1fr_2fr] grid-rows-[_50%_50%_50%] gap-[2rem] content-between mt-[4rem] wrap ">
 				<section className="flex flex-col text-[1.2rem]">
 					<NavLink to={"/live"} className="w-[fit-content]">
 						Register Live or Push
@@ -99,7 +99,7 @@ const Footer = () => {
 					</NavLink>
 				</section>
 
-				<section>
+				<section >
 					<h4 className="footer__h4">Sign up to our newsletter</h4>
 					<p className="w-[90%]">
 						Enter your email address to stay up to date with the
@@ -107,7 +107,7 @@ const Footer = () => {
 					</p>
 					<form
 						action=""
-						className="grid grid-cols-[_70%_20%] mt-[1.4rem] font-semibold "
+						className="grid grid-cols-[_70%_30%] mt-[1.4rem] font-semibold "
 					>
 						<input
 							type="text"
@@ -161,14 +161,20 @@ const Footer = () => {
 					<NavLink to={"#"}>Privacy Policy</NavLink>
 					<NavLink to={"#"}>Cookie Settings</NavLink>
 					<NavLink to={"#"}>Imprint</NavLink>
-					
-					<NavLink to={"#"} className="ml-auto " >
+
+					<NavLink to={"#"} className="ml-auto ">
 						Made in Berlin
-						<img src="/imgs/logo.png" className="w-[50px] inline-block" />
+						<img
+							src="/imgs/logo.png"
+							className="w-[50px] inline-block"
+						/>
 					</NavLink>
 				</ul>
-				
-				<h3 className="mt-[4rem] text-center ">This site was created to practice, THIS IS NOT THE OFFICIAL SITE</h3>
+
+				<h3 className="mt-[4rem] text-center ">
+					This site was created to practice, THIS IS NOT THE OFFICIAL
+					SITE
+				</h3>
 			</div>
 		</footer>
   );
