@@ -19,14 +19,13 @@ function App() {
 			<BrowserRouter>
 				<Ableton />
 				<Routes>
-					<Route exact path="/en" element={<En />}>
-						<Route path="about" element={<AboutEn />} />
-						<Route path="jobs" element={<JobsEn />} />
-						<Route
-							path="apprenticeships"
-							element={<ApprenticeshipsEn />}
-						/>
-					</Route>
+					<Route exact path="/en" element={<En />}></Route>
+					<Route path="about" element={<AboutEn />} />
+					<Route path="jobs" element={<JobsEn />} />
+					<Route
+						path="apprenticeships"
+						element={<ApprenticeshipsEn />}
+					/>
 					<Route exact path="/live" element={<Live />} />
 					<Route exact path="/push" element={<Push />} />
 					<Route exact path="/note" element={<Note />} />
