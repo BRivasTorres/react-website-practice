@@ -1,25 +1,19 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import DataContext from "../context/DataContext";
 
 
-const FormSearch = ({search}) => {
+const FormSearch = () => {
+    const {handleSubmit, inputSearch, handleInputSearch} = useContext(DataContext)
+    
     const [formStyles, setFormStyles] = useState(false)
-    const [input, setInput] = useState("")
     const [isInputFocused, setisInputFocused] = useState(false)
     
     const handleFormStyles = (action) => {
         setFormStyles(action === "enter" || isInputFocused)
     }
     
-    const handleSubmit = (e) => {
-        e.preventDefault()
-        search(true, input)
-    }
-    
-    const handleInput = (e) => {
-        setInput(e.target.value)
-    }
     
 	return (
 		<form
@@ -34,8 +28,8 @@ const FormSearch = ({search}) => {
 				className="placeholder:text-[#B39999] border-none outline-transparent"
                 onFocus={() => setisInputFocused(true)}
                 onBlur={() => setisInputFocused(false)}
-                value={input}
-                onChange={handleInput}
+                value={inputSearch}
+                onChange={handleInputSearch}
 			/>
 			<FontAwesomeIcon icon={faArrowRight} className={`${formStyles ? "text-[#485ACA]" : ""}`}/>
 		</form>

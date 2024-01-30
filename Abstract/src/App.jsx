@@ -7,14 +7,14 @@ import Abstract from "./components/Abstract";
 function App() {
   return (
 		<>
-      <BrowserRouter>
-      <Abstract />
-        <Routes>
-          <Route path={"/"} element={<Home />} />
-          <Route path={"/sign"} element={<SubmitReques />} />
-          <Route path={"/submit"} element={<SignIn />} />
-        </Routes>
-      </BrowserRouter>
+			<BrowserRouter>
+				<Abstract />
+				<Routes>
+					<Route path={"/"} element={<Home />} />
+					<Route path={"/sign"} element={<SubmitReques />} />
+					<Route path={"/submit"} element={<SignIn />} />
+				</Routes>
+			</BrowserRouter>
 		</>
   );
 }
