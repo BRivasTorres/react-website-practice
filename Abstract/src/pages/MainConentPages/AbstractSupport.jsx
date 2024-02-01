@@ -1,9 +1,7 @@
-import React from 'react'
-
 const AbstractSupport = () => {
   return (
     <div>
-      <h2>Hola </h2>
+      <h1 className="text-[4rem] text-green-900 ">AbstractSupport</h1>
     </div>
   )
 }

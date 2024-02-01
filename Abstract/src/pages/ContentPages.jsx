@@ -1,10 +1,13 @@
 import { useParams } from "react-router-dom"
+import Header from "../components/header/Header"
+import TestContent from "../components/TestContent"
 
 const ContentPages = () => {
-    const {name} = useParams()
+  const {name} = useParams()
   return (
     <div>
-        <h2>Hola {name}</h2>
+      <Header />
+      <TestContent page={name} />
     </div>
   )
 }
