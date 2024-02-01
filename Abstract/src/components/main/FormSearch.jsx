@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { useContext, useState } from "react";
-import DataContext from "../context/DataContext";
+import DataContext from "../../context/DataContext";
 
 
 const FormSearch = () => {

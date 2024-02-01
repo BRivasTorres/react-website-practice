@@ -1,6 +1,6 @@
 import FormSearch from "./FormSearch"
 
-const Search = () => {
+const MainSearch = () => {
   
   return (
 		<div className="bg-[#DADBF1] flex justify-center items-center flex-col py-[5rem] ">
@@ -10,4 +10,4 @@ const Search = () => {
   );
 }
 
-export default Search
+export default MainSearch

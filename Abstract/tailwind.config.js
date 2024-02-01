@@ -8,6 +8,9 @@ export default {
 				mainColorText: "#FFFFFF",
 				roseColor: "#4C5FD5",
 			},
+			gridTemplateColumns: {
+				"main-grid" : "repeat(auto-fit, minmax(500px, 1fr)) " 
+			}
 		},
 	},
 	plugins: [],

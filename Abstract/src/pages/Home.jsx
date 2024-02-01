@@ -1,8 +1,9 @@
+import Abstract from "../components/Abstract"
 
 const Home = () => {
   return (
     <div>
-      
+      <Abstract />
     </div>
   )
 }

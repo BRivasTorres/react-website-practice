@@ -1,6 +1,6 @@
-import Header from "./Header"
 import {DataProvider} from "../context/DataContext";
-import Main from "./Main"
+import Header from "./header/Header"
+import Main from "./main/Main"
 
 const Abstract = () => {
   
