@@ -2,7 +2,7 @@
 const ManageAccount = () => {
   return (
     <div>
-      <h1>Manage account</h1>
+      <h1 className="text-[2rem] text-blue-900 ">Manage account</h1>
     </div>
   )
 }
