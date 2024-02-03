@@ -1,4 +1,3 @@
-
 const ManageAccount = () => {
   return (
     <div>

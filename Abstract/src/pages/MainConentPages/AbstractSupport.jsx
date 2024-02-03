@@ -1,7 +1,9 @@
+import SubPagesHeader from "../../components/common/SubPagesHeader"
+
 const AbstractSupport = () => {
   return (
     <div>
-      <h1 className="text-[4rem] text-green-900">AbstractSupport</h1>
+      <SubPagesHeader pageId={0} />
     </div>
   )
 }
