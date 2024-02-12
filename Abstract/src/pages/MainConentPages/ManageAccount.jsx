@@ -1,9 +1,14 @@
+import SubPagesHeader from "../../components/common/SubPagesHeader"
+import SubPagesLists from "../../components/common/SubPagesLists";
+import manageAccountData from "../../mocks/manageAccountDAta";
+
 const ManageAccount = () => {
   return (
-    <div>
-      <h1 className="text-[2rem] text-blue-900 ">Manage account</h1>
-    </div>
-  )
+		<div>
+			<SubPagesHeader pageId={1} />
+      <SubPagesLists dataList={manageAccountData} />
+		</div>
+  );
 }
 
 export default ManageAccount

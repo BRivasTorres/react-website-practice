@@ -1,6 +1,6 @@
-const usingLists = [
+const usingAbstractData = [
 	{
-        id: 1,
+		id: 1,
 		title: "Get started in Abstract",
 		list: [
 			"Try out Abstract",
@@ -11,38 +11,39 @@ const usingLists = [
 		],
 	},
 	{
-        id: 2,
-		title: "Get started in Abstract",
+		id: 1.2,
+		title: "Using the Abstract Desktop App",
 		list: [
-			"Try out Abstract",
-			"The Abstract Design Workflow",
-			"Start Working In Abstract",
-			"Practice Abstract workflow",
-			"Glossary",
+			"Update to the newest version of Abstract",
+			"Backing Up your Work in Abstract",
+			"System requirements",
+			"Downloading the Abstract Desktop Application",
+			"The Abstract plugin",
+			"Keyboard shortcuts",
 		],
 	},
 	{
-        id: 3,
-		title: "Get started in Abstract",
+		id: 1.3,
+		title: "Working in Projects",
 		list: [
-			"Try out Abstract",
-			"The Abstract Design Workflow",
-			"Start Working In Abstract",
-			"Practice Abstract workflow",
-			"Glossary",
+			"Name your project",
+			"Add files to your project",
+			"Create a branch",
+			"Open untracked vs. creating a branch",
+			"Change branch status",
+			"Rename a branch",
 		],
 	},
 	{
-        id: 3,
-		title: "Get started in Abstract",
+		id: 1.4,
+		title: "Commit your work",
 		list: [
-			"Try out Abstract",
-			"The Abstract Design Workflow",
-			"Start Working In Abstract",
-			"Practice Abstract workflow",
-			"Glossary",
+			"A guide to commits",
+			"Committing changes in a branch",
+			"Commit history",
+			"Troubleshoot your commits",
 		],
 	},
 ];
 
-export default usingLists
+export default usingAbstractData

@@ -6,3 +6,8 @@
     width: min(1400px, 80%);
     margin-inline: auto;
 }
+
+
+.help-info {
+    gap: 3rem calc(100% - 90%);
+}
