@@ -3,7 +3,7 @@ import SubPagesHeader from "../../components/common/SubPagesHeader"
 const AbstractSupport = () => {
   return (
     <div>
-      <SubPagesHeader pageId={0} />
+      <SubPagesHeader pageId={5} />
     </div>
   )
 }

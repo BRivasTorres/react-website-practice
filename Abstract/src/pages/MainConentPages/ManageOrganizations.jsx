@@ -1,7 +1,12 @@
+import SubPagesHeader from "../../components/common/SubPagesHeader"
+import SubPagesLists from "../../components/common/SubPagesLists"
+import manageOrganizationsData from "../../mocks/ManageOrganizationsData"
+
 const ManageOrganizations = () => {
   return (
     <div>
-        <h1 className="text-[2rem] text-cyan-800 ">fdfdsafdsfds</h1>      
+      <SubPagesHeader pageId={2} />
+      <SubPagesLists dataList={manageOrganizationsData} />
     </div>
   )
 }
