@@ -1,7 +1,7 @@
 const SubPagesLists = ({dataList}) => {
   return (
 		<div>
-			<section className="mt-[8rem] mx-auto w-[85%] max-w-[1900px] grid grid-cols-2 help-info">
+			<section className="my-[8rem] mx-auto w-[85%] max-w-[1900px] grid grid-cols-2 help-info">
 				{dataList.map((item) => {
 					return (
 						<div key={item.id} className="">

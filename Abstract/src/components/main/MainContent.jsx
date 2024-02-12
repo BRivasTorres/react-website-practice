@@ -3,7 +3,7 @@ import mainContentData from "../../mocks/MainContentData"
 
 const MainContent = () => {
   return (
-    <div className="main-content grid grid-cols-main-grid gap-y-[6rem] items-center gap-x-[2rem] mt-[7rem]">
+    <div className="main-content grid grid-cols-main-grid gap-y-[6rem] items-center gap-x-[2rem] my-[8rem]">
       {mainContentData.map(item => {
         return (
 			<div key={item.id} className="flex gap-[1.5rem]">

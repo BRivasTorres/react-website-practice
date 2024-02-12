@@ -8,6 +8,7 @@ import ManageOrganizations from "./MainConentPages/ManageOrganizations";
 import ManageBilling from "./MainConentPages/ManageBilling";
 import AuthenticateAbstract from "./MainConentPages/AuthenticateAbstract";
 import AbstractSupport from "./MainConentPages/AbstractSupport";
+import Footer from "../components/footer/Footer";
 
 const ContentPages = () => {
   const [currentPage, setCurrentPage] = useState(<Home />);
@@ -42,6 +43,7 @@ const ContentPages = () => {
     <div>
       <Header />
       {currentPage}
+      <Footer />
     </div>
   )
 }
