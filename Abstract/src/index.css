@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    scroll-behavior: smooth;
+}
+
 .main-content {
     width: min(1400px, 80%);
     margin-inline: auto;

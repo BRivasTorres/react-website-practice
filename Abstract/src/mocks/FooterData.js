@@ -37,6 +37,13 @@ const footerData = [
             "Legal",
             "Cont"
         ]
+    },     
+    {
+        id: 5,
+        title: "Contact Us",
+        list: [                
+            "info@practice.com",
+        ]
     }
 ]
 
