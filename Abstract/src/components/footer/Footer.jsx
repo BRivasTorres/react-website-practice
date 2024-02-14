@@ -11,7 +11,7 @@ const Footer = () => {
 							<ul className="text-[1.2rem] ">
 								{itemList.list.map((li, id) => {
 									return (
-										<a href="#" key={id}>
+										<a href="#" key={id} className="hover:underline">
 											<li>{li}</li>
 										</a>
 									);
