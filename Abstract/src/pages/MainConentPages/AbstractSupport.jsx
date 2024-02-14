@@ -1,6 +1,7 @@
 import SubPagesHeader from "../../components/common/SubPagesHeader"
 import BillingInquiryComponent from "../../components/extra/BillingInquiryComponent";
 import ContactSupportComponent from "../../components/extra/ContactSupportComponent";
+import SalesInquiryComponent from "../../components/extra/SalesInquiryComponent";
 
 const AbstractSupport = () => {
   return (
@@ -10,6 +11,7 @@ const AbstractSupport = () => {
         <aside>
           <ContactSupportComponent />    
           <BillingInquiryComponent />
+          <SalesInquiryComponent />
         </aside>
         <aside>
           <h2>contenido activo</h2>

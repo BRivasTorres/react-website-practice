@@ -15,3 +15,13 @@ html {
 .help-info {
     gap: 3rem calc(100% - 90%);
 }
+
+.extra-links-styles {
+    text-decoration: underline;
+    transition: all 500ms linear;
+}
+
+.extra-links-styles:hover {
+    cursor: pointer;
+    opacity: .6;
+}

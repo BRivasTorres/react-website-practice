@@ -3,24 +3,24 @@ import { faAsterisk } from "@fortawesome/free-solid-svg-icons";
 
 const BillingInquiryComponent = () => {
   return (
-		<div className="mt-[4rem] text-[#191A1B] text-[1.4rem] font-medium">
-			<h2 className="text-[2.2rem] ">
+		<div className="mt-[4rem] text-[#191A1B] text-[1.4rem]">
+			<h2 className="text-[2.2rem] font-medium">
 				Ask questions about subscriptions and billing
 			</h2>
-			<p className="bg-[#FFE496] rounded-[15px] px-[1.5rem] py-[1rem] font-semibold text-[1.5rem] my-[2rem] flex items-center gap-[2rem] ">
+			<p className="bg-[#FFE496] rounded-[15px] px-[1.5rem] py-[1rem] text-[1.5rem] my-[2rem] flex items-center gap-[2rem] ">
 				<FontAwesomeIcon icon={faAsterisk} />
                 <span>
                     Admins can manage and update billing information on behalf of
                     their Organization directly from the{" "}
-                    <a className="underline hover:cursor-pointer hover:opacity-[.6] transition-all duration-500 ease-linear">
+                    <a className="extra-links-styles">
                         web app
                     </a>
                     , including{" "}
-                    <a className="underline hover:cursor-pointer hover:opacity-[.6] transition-all duration-500 ease-linear">
+                    <a className="extra-links-styles">
                         adding more contributor seats
                     </a>
                     , managing billing details, and{" "}
-                    <a className="underline hover:cursor-pointer hover:opacity-[.6] transition-all duration-500 ease-linear">
+                    <a className="extra-links-styles">
                         locating invoices
                     </a>
                     .
