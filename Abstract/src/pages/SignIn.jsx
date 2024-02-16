@@ -8,11 +8,13 @@ const handleLogin = async(e) => {
 
 const SignIn = () => {
 	return (
-		<div>
-			<h2>Login</h2>
-			<button onClick={handleLogin}>
-				Iniciar sesión con Google
-			</button>
+		<div className="w-[50%] m-[_5rem_auto] max-w-[1000px] border-[5px] border-[#E5E5E5] flex flex-col justify-center items-center p-[4rem] rounded-[10px] ">
+			<h2 className="text-[2rem] font-medium mb-[3rem] ">Sign In to abstract</h2>
+      <section>
+        <div className="">
+			    <button onClick={handleLogin} className="button-login">Sign In with Google</button>
+        </div>
+      </section>
 		</div>
 	);
 };
