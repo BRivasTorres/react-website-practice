@@ -11,22 +11,19 @@ const Nav = () => {
 					Abstract
 				</NavLink>
 				<div className="h-[30px] w-[3px] mx-[1rem] bg-mainColorText "></div>
-				<NavLink
-					to={"/"}
-					className="hover:underline"
-				>
+				<NavLink to={"/"} className="hover:underline">
 					Help Center
 				</NavLink>
 			</ul>
 			<ul className="flex gap-[1.5rem] items-center">
 				<NavLink
-					to={"/sign"}
+					to={"/content/AbstractSupport"}
 					className="border px-[2rem] py-[.5rem] rounded-lg transition-all duration-300 ease-in "
 				>
 					Submit a request
 				</NavLink>
 				<NavLink
-					to={"/submit"}
+					to={"/signIn"}
 					className="bg-roseColor px-[2rem] py-[.5rem] rounded-lg hover:bg-white hover:text-roseColor transition-all duration-300 ease-in"
 				>
 					Sign in
