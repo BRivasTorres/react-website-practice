@@ -7,14 +7,11 @@ const AbstractSupport = () => {
   return (
 		<div>
 			<SubPagesHeader pageId={5} />
-      <section className="mt-[8rem] w-[80%] mx-auto grid grid-cols-[_1fr_auto] gap-x-[200px] ">
-        <aside>
+      <section className="mt-[8rem] w-[80%] mx-auto ">
+        <aside className="w-[80%] ">
           <ContactSupportComponent />    
           <BillingInquiryComponent />
           <SalesInquiryComponent />
-        </aside>
-        <aside>
-          <h2>contenido activo</h2>
         </aside>
       </section>
 		</div>
