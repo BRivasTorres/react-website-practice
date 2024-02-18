@@ -2,7 +2,7 @@ import booksCoverData from "../mocks/BooksCoverData"
 
 const CoverBackstage = () => {
   return (
-    <div>
+    <div className="w-[100%]">
         {booksCoverData.map((book, id) => {
             return(
                 <div key={id}>
