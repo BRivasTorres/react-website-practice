@@ -1,6 +1,6 @@
 const booksCoverData = [
 	{
-		id: 7,
+		id: 1,
 		issue: "issue #7",
 		imgSrc: "/imgs/img7.png",
 		buy: ["(Europe)", "(UK & Overseas)"],
@@ -8,7 +8,7 @@ const booksCoverData = [
 		colorBg: "#FF608C",
 	},
 	{
-		id: 6,
+		id: 2,
 		issue: "issue #6",
 		imgSrc: "/imgs/img6.png",
 		buy: ["BUY HERE"],
@@ -16,7 +16,7 @@ const booksCoverData = [
 		colorBg: "#FFFFFF",
 	},
 	{
-		id: 5,
+		id: 3,
 		issue: "issue #5",
 		imgSrc: "/imgs/img5.png",
 		buy: ["BUY HERE"],
@@ -32,7 +32,7 @@ const booksCoverData = [
 		colorBg: "#FF6519",
 	},
 	{
-		id: 3,
+		id: 5,
 		issue: "issue #3",
 		imgSrc: "/imgs/img3.png",
 		buy: ["BUY HERE"],
@@ -40,7 +40,7 @@ const booksCoverData = [
 		colorBg: "#FFBE00",
 	},
 	{
-		id: 2,
+		id: 6,
 		issue: "issue #2",
 		imgSrc: "/imgs/img2.png",
 		buy: ["BUY HERE"],
@@ -48,7 +48,7 @@ const booksCoverData = [
 		colorBg: "#1D3FBB",
 	},
 	{
-		id: 1,
+		id: 7,
 		issue: "issue #1",
 		imgSrc: "/imgs/img1.png",
 		buy: ["BUY HERE"],
