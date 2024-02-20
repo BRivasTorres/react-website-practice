@@ -1,6 +1,6 @@
 const InfoBackstage = () => {
   return (
-		<section className="flex flex-col justify-between">
+		<section className="flex flex-col justify-between fixed left-[2rem] min-h-[90vh] max-w-[20%]  ">
 			<h2 className="font-extrabold text-[2rem] uppercase ">
 				Backstage Talk
 			</h2>

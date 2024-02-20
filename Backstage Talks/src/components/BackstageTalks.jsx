@@ -3,8 +3,9 @@ import InfoBackstage from "./InfoBackstage"
 import Nav from "./Nav"
 
 const BackstageTalks = () => {
+  
   return (
-    <div className="p-[2rem] grid grid-cols-[_2fr_5fr_2fr] w-[100%] min-h-[100vh] bg-red-300 ">
+    <div className="p-[2rem] flex justify-center gap-[2rem] bg-red-300">
       <InfoBackstage />
       <CoverBackstage />
       <Nav />
