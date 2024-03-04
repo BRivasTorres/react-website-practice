@@ -20,3 +20,5 @@ These sites and practices were proposed by the site : https://www.frontendpracti
 
 <h2>Abstract</h2>
 <a href="https://abstract-website-practice.netlify.app/"><img src="https://i.ibb.co/z6qdZB8/1.png" alt="1" border="0"></a>
+<h2>Backstage Talks</h2>
+<a href="https://backstage-talks-proyect2.netlify.app/"><img src="https://i.ibb.co/brR50b4/2.png" alt="2" border="0">
