@@ -21,10 +21,10 @@ const Nav = ({handleBackgroundColor}) => {
 			<ul className="capitalize text-[1.3rem] ">
         {issues.map((li, id) => {
           return (
-            <li key={id} className="hover:underline hover:cursor-pointer">
-              <a href={`#issue${id+1}`} onClick={() => updateColor(id)}>{li}</a>
-            </li>
-			    );
+				<li key={id} className="hover:underline hover:cursor-pointer">
+				<a href={`#issue${id+1}`} onClick={() => updateColor(id)}>{li}</a>
+				</li>
+			);
         })}
 			</ul>
 		</nav>

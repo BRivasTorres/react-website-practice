@@ -25,7 +25,11 @@ const CoverBackstage = () => {
 									<aside key={idx}>
 										<a
 											href="#"
-											className="text-white  mr-[.4rem] uppercase hover:underline "
+											className={`${
+												book.id === 2
+													? "text-black"
+													: "text-white"
+											} mr-[.4rem] uppercase hover:underline`}
 										>
 											buy here
 										</a>
@@ -35,41 +39,16 @@ const CoverBackstage = () => {
 							})}
 						<p className="text-[.9rem] mt-[1.5rem]">
 							{book.whereToBuy}{" "}
-							<a href="#" className="text-white hover:underline">
+							<a
+								href="#"
+								className={`${book.id === 2 ? "text-black" : "text-white"} hover:underline`}
+							>
 								selected stores
 							</a>
 						</p>
 					</div>
 				);
             })}
-			{/* <div
-				className="flex flex-col justify-center items-center font-semibold hide"
-			>
-				<img src={booksCoverData[0].imgSrc} alt="cover" className="w-[40%]"/>
-				<h2 className="capitalize text-[1.3rem] mb-[1.5rem]">
-					{booksCoverData[0].issue}
-				</h2>
-				{booksCoverData[0].buy &&
-					booksCoverData[0].buy.map((subItem, idx) => {
-						return (
-							<aside key={idx}>
-								<a
-									href="#"
-									className="text-white  mr-[.4rem] uppercase hover:underline "
-								>
-									buy here
-								</a>
-								<span className="">{subItem}</span>
-							</aside>
-						);
-					})}
-				<p className="text-[.9rem] mt-[1.5rem]">
-					{booksCoverData[0].whereToBuy}{" "}
-					<a href="#" className="text-white hover:underline">
-						selected stores
-					</a>
-				</p>
-			</div> */}
 		</div>
   );
 }

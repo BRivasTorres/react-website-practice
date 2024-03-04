@@ -4,10 +4,8 @@ import InfoBackstage from "./InfoBackstage"
 import Nav from "./Nav"
 import booksCoverData from "../mocks/BooksCoverData"
 
-
-//TODO : Verificar implementacion en la actializacion del background color
 const BackstageTalks = () => {
-  const [currColor, setCurrColor] = useState(1)
+  const [currColor, setCurrColor] = useState(0)
   
   const handleBackgroundColor = (id) => {
     setCurrColor(id)
@@ -15,7 +13,13 @@ const BackstageTalks = () => {
   
   return (
 		<div
-			className={`p-[2rem] flex justify-center gap-[2rem] bg-[${booksCoverData[currColor].colorBg}]`}
+			style={{
+				padding: "2rem",
+				display: "flex",
+				justifyContent: "center",
+				gap: "2rem",
+				backgroundColor: booksCoverData[currColor].colorBg,
+			}}
 		>
 			<InfoBackstage />
 			<CoverBackstage />
